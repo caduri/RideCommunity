@@ -62400,3 +62400,622 @@ Processing by StaticPagesController#home as HTML
   [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
   Rendered layouts/_header.html.erb (52.6ms)
 Completed 200 OK in 1029ms (Views: 668.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-01 17:18:09 +0300
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered static_pages/_non_user_home.html.erb (1.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 4256ms (Views: 4168.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-01 17:18:15 +0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-01 17:18:15 +0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-01 17:18:15 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-01 17:18:15 +0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-01 17:18:15 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:15 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:15 +0300
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:16 +0300
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:16 +0300
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:16 +0300
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:16 +0300
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:16 +0300
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:16 +0300
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:16 +0300
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:16 +0300
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:16 +0300
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/assets/micropost.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-01 17:18:17 +0300
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-09-01 17:18:20 +0300
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered shared/_error_messages.html.erb (13.5ms)
+  Rendered users/_fields.html.erb (362.8ms)
+  Rendered users/new.html.erb within layouts/application (423.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 487ms (Views: 483.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-01 17:18:35 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zq+lpFEmdSYsJr6ufRUSTPMAl2EtO6GHZ8stBoKg3I=", "user"=>{"name"=>"caduri", "age"=>"34", "gender"=>"Male", "vehicle_type"=>"Car", "email"=>"cadurik@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('cadurik@gmail.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (66.0ms)[0m  [1mINSERT INTO "users" ("age", "created_at", "email", "gender", "name", "password_digest", "remember_token", "updated_at", "vehicle_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 34], ["created_at", Sun, 01 Sep 2013 14:18:35 UTC +00:00], ["email", "cadurik@gmail.com"], ["gender", "Male"], ["name", "caduri"], ["password_digest", "$2a$10$8ZXnwfOSqc129IJrqjfJ0O.dH.bgrmZdgp39Fb26lA784DkUe2FBe"], ["remember_token", "0wmgsiIWYHIpOgQW3PumIA"], ["updated_at", Sun, 01 Sep 2013 14:18:35 UTC +00:00], ["vehicle_type", "Car"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 224ms (ActiveRecord: 67.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-09-01 17:18:35 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (134.9ms)
+  Rendered users/show.html.erb within layouts/application (154.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 198ms (Views: 193.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-01 17:18:39 +0300
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  Rendered shared/_user_info.html.erb (1.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (4.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "rides" WHERE (scheduledfor > '2013-09-01 14:18:39' and user_id <> 2) AND (rides.latitude BETWEEN 32.00240678394081 AND 32.02039321605919 AND rides.longitude BETWEEN 34.76159407501529 AND 34.78280592498471)
+  Rendered shared/_feed.html.erb (1.9ms)
+  Rendered static_pages/_user_home.html.erb (39.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (57.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 6016ms (Views: 70.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-01 17:18:45 +0300
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1[0m
+  Rendered shared/_user_info.html.erb (0.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (3.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE (scheduledfor > '2013-09-01 14:18:45' and user_id <> 2) AND (rides.latitude BETWEEN 32.00240678394081 AND 32.02039321605919 AND rides.longitude BETWEEN 34.76159407501529 AND 34.78280592498471)[0m
+  Rendered shared/_feed.html.erb (0.8ms)
+  Rendered static_pages/_user_home.html.erb (8.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 5218ms (Views: 19.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-01 17:18:50 +0300
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  Rendered shared/_user_info.html.erb (0.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (10.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "rides" WHERE (scheduledfor > '2013-09-01 14:18:50' and user_id <> 2) AND (rides.latitude BETWEEN 32.00240678394081 AND 32.02039321605919 AND rides.longitude BETWEEN 34.76159407501529 AND 34.78280592498471)
+  Rendered shared/_feed.html.erb (0.9ms)
+  Rendered static_pages/_user_home.html.erb (47.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (48.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 3836ms (Views: 59.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2013-09-01 17:18:58 +0300
+Processing by RidesController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered rides/_fields.html.erb (59.5ms)
+  Rendered rides/new.html.erb within layouts/application (90.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 118ms (Views: 116.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2013-09-01 17:19:09 +0300
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zq+lpFEmdSYsJr6ufRUSTPMAl2EtO6GHZ8stBoKg3I=", "ride"=>{"addressto"=>"hamalacha, holon", "scheduledfor(3i)"=>"1", "scheduledfor(2i)"=>"10", "scheduledfor(1i)"=>"2013", "scheduledfor(4i)"=>"14", "scheduledfor(5i)"=>"18", "comment"=>"check"}, "commit"=>"Create a Ride"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "rides" ("addressto", "comment", "created_at", "destlatitude", "destlongitude", "latitude", "longitude", "scheduledfor", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["addressto", "hamalacha, holon"], ["comment", "check"], ["created_at", Sun, 01 Sep 2013 14:19:16 UTC +00:00], ["destlatitude", 32.015714], ["destlongitude", 34.800357], ["latitude", 32.0114], ["longitude", 34.7722], ["scheduledfor", Tue, 01 Oct 2013 14:18:00 UTC +00:00], ["updated_at", Sun, 01 Sep 2013 14:19:16 UTC +00:00], ["user_id", 2]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6961ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-01 17:19:16 +0300
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  Rendered shared/_user_info.html.erb (1.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (3.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "rides" WHERE (scheduledfor > '2013-09-01 14:19:16' and user_id <> 2) AND (rides.latitude BETWEEN 32.00240678394081 AND 32.02039321605919 AND rides.longitude BETWEEN 34.76159407501529 AND 34.78280592498471)
+  Rendered shared/_feed.html.erb (1.1ms)
+  Rendered static_pages/_user_home.html.erb (9.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 7351ms (Views: 21.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/2/myRides" for 127.0.0.1 at 2013-09-01 17:19:27 +0300
+Processing by UsersController#myRides as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?  [["user_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (10.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?  [["user_id", 2]]
+  [1m[36mRide Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides" WHERE "rides"."user_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1[0m
+  Rendered rides/_ride.html.erb (295.4ms)
+  Rendered users/show_my_rides.html.erb within layouts/application (338.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 384ms (Views: 380.2ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2013-09-01 17:19:34 +0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6zq+lpFEmdSYsJr6ufRUSTPMAl2EtO6GHZ8stBoKg3I="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-01 17:19:34 +0300
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered static_pages/_non_user_home.html.erb (0.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-09-01 17:19:35 +0300
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_fields.html.erb (6.7ms)
+  Rendered users/new.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-01 17:19:45 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zq+lpFEmdSYsJr6ufRUSTPMAl2EtO6GHZ8stBoKg3I=", "user"=>{"name"=>"dddd", "age"=>"34", "gender"=>"Male", "vehicle_type"=>"Car", "email"=>"caduri@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('caduri@gmail.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("age", "created_at", "email", "gender", "name", "password_digest", "remember_token", "updated_at", "vehicle_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 34], ["created_at", Sun, 01 Sep 2013 14:19:45 UTC +00:00], ["email", "caduri@gmail.com"], ["gender", "Male"], ["name", "dddd"], ["password_digest", "$2a$10$E28kH7c80K/gG/HYU8REKuxFKPxgWwN.JQmRJOwYS/gag0icfW0cm"], ["remember_token", "9kt3-zof5mwA-lOYlT6Byw"], ["updated_at", Sun, 01 Sep 2013 14:19:45 UTC +00:00], ["vehicle_type", "Car"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 83ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2013-09-01 17:19:45 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '9kt3-zof5mwA-lOYlT6Byw' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?  [["user_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'  [["user_id", 3]]
+  Rendered shared/_stats.html.erb (3.7ms)
+  Rendered users/show.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-01 17:19:48 +0300
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '9kt3-zof5mwA-lOYlT6Byw' LIMIT 1[0m
+  Rendered shared/_user_info.html.erb (0.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?  [["user_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'  [["user_id", 3]]
+  Rendered shared/_stats.html.erb (4.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE (scheduledfor > '2013-09-01 14:19:48' and user_id <> 3) AND (rides.latitude BETWEEN 32.00240678394081 AND 32.02039321605919 AND rides.longitude BETWEEN 34.76159407501529 AND 34.78280592498471)[0m
+  [1m[35mRide Load (0.1ms)[0m  SELECT "rides".* FROM "rides" WHERE (scheduledfor > '2013-09-01 14:19:48' and user_id <> 3) AND (rides.latitude BETWEEN 32.00240678394081 AND 32.02039321605919 AND rides.longitude BETWEEN 34.76159407501529 AND 34.78280592498471) LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "hitchhikes" WHERE "hitchhikes"."ride_id" = ?  [["ride_id", 2]]
+  [1m[36mHitchhike Load (0.2ms)[0m  [1mSELECT "hitchhikes".* FROM "hitchhikes" WHERE "hitchhikes"."ride_id" = ? AND "hitchhikes"."user_id" = 3 LIMIT 1[0m  [["ride_id", 2]]
+  Rendered rides/_join_ride.html.erb (23.8ms)
+  Rendered rides/_join_ride_form.html.erb (64.3ms)
+  Rendered shared/_feed_item.html.erb (342.0ms)
+  Rendered shared/_feed.html.erb (381.5ms)
+  Rendered static_pages/_user_home.html.erb (389.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (389.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 5914ms (Views: 401.5ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/hitchhikes" for 127.0.0.1 at 2013-09-01 17:19:57 +0300
+Processing by HitchhikesController#create as JS
+  Parameters: {"utf8"=>"✓", "hitchhike"=>{"user_id"=>"3", "ride_id"=>"2"}, "commit"=>"join"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '9kt3-zof5mwA-lOYlT6Byw' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mRide Load (0.1ms)[0m  SELECT "rides".* FROM "rides" WHERE "rides"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "hitchhikes" ("created_at", "ride_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sun, 01 Sep 2013 14:19:57 UTC +00:00], ["ride_id", 2], ["updated_at", Sun, 01 Sep 2013 14:19:57 UTC +00:00], ["user_id", 3]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "messages" ("content", "created_at", "seen", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["content", "dddd join your ride to hamalacha, holon at 2013-10-01 14:18:00 UTC"], ["created_at", Sun, 01 Sep 2013 14:19:57 UTC +00:00], ["seen", false], ["updated_at", Sun, 01 Sep 2013 14:19:57 UTC +00:00], ["user_id", 2]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mHitchhike Load (0.2ms)[0m  SELECT "hitchhikes".* FROM "hitchhikes" WHERE "hitchhikes"."ride_id" = ? AND "hitchhikes"."user_id" = 3 LIMIT 1  [["ride_id", 2]]
+  Rendered rides/_unjoin_ride.html.erb (2.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered hitchhikes/create.js.erb (5.7ms)
+Completed 200 OK in 41ms (Views: 17.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/3/join_rides" for 127.0.0.1 at 2013-09-01 17:20:00 +0300
+Processing by UsersController#join_rides as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?  [["user_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'  [["user_id", 3]]
+  Rendered shared/_stats.html.erb (6.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE (id in (SELECT ride_id FROM hitchhikes
+ WHERE user_id = 3))[0m
+  [1m[35mRide Load (0.3ms)[0m  SELECT "rides".* FROM "rides" WHERE (id in (SELECT ride_id FROM hitchhikes
+ WHERE user_id = 3)) LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '9kt3-zof5mwA-lOYlT6Byw' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "hitchhikes" WHERE "hitchhikes"."ride_id" = ?[0m  [["ride_id", 2]]
+  [1m[35mHitchhike Load (0.2ms)[0m  SELECT "hitchhikes".* FROM "hitchhikes" WHERE "hitchhikes"."ride_id" = ? AND "hitchhikes"."user_id" = 3 LIMIT 1  [["ride_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "hitchhikes".* FROM "hitchhikes" WHERE "hitchhikes"."ride_id" = ? AND "hitchhikes"."user_id" = 3 LIMIT 1[0m  [["ride_id", 2]]
+  Rendered rides/_unjoin_ride.html.erb (3.2ms)
+  Rendered rides/_join_ride_form.html.erb (7.2ms)
+  Rendered rides/_ride.html.erb (222.3ms)
+  Rendered users/show_join_rides.html.erb within layouts/application (236.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 285ms (Views: 281.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2013-09-01 17:20:14 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '9kt3-zof5mwA-lOYlT6Byw' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?  [["user_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'  [["user_id", 3]]
+  Rendered shared/_stats.html.erb (5.5ms)
+  Rendered users/show.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/3/join_rides" for 127.0.0.1 at 2013-09-01 17:20:16 +0300
+Processing by UsersController#join_rides as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 3]]
+  Rendered shared/_stats.html.erb (4.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "rides" WHERE (id in (SELECT ride_id FROM hitchhikes
+ WHERE user_id = 3))
+  [1m[36mRide Load (0.2ms)[0m  [1mSELECT "rides".* FROM "rides" WHERE (id in (SELECT ride_id FROM hitchhikes
+ WHERE user_id = 3)) LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '9kt3-zof5mwA-lOYlT6Byw' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "hitchhikes" WHERE "hitchhikes"."ride_id" = ?  [["ride_id", 2]]
+  [1m[36mHitchhike Load (0.1ms)[0m  [1mSELECT "hitchhikes".* FROM "hitchhikes" WHERE "hitchhikes"."ride_id" = ? AND "hitchhikes"."user_id" = 3 LIMIT 1[0m  [["ride_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "hitchhikes".* FROM "hitchhikes" WHERE "hitchhikes"."ride_id" = ? AND "hitchhikes"."user_id" = 3 LIMIT 1  [["ride_id", 2]]
+  Rendered rides/_unjoin_ride.html.erb (1.6ms)
+  Rendered rides/_join_ride_form.html.erb (4.3ms)
+  Rendered rides/_ride.html.erb (229.0ms)
+  Rendered users/show_join_rides.html.erb within layouts/application (240.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 254ms (Views: 250.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/3/my_messages" for 127.0.0.1 at 2013-09-01 17:20:18 +0300
+Processing by UsersController#my_messages as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ?  [["user_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 3]]
+  Rendered shared/_stats.html.erb (29.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ?  [["user_id", 3]]
+  Rendered users/show_my_messages.html.erb within layouts/application (33.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '9kt3-zof5mwA-lOYlT6Byw' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 95ms (Views: 92.1ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2013-09-01 17:20:21 +0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6zq+lpFEmdSYsJr6ufRUSTPMAl2EtO6GHZ8stBoKg3I="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-01 17:20:21 +0300
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered static_pages/_non_user_home.html.erb (0.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2013-09-01 17:20:23 +0300
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-09-01 17:20:27 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zq+lpFEmdSYsJr6ufRUSTPMAl2EtO6GHZ8stBoKg3I=", "email"=>"cadurik@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'cadurik@gmail.com' LIMIT 1
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 76ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-09-01 17:20:27 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (3.7ms)
+  Rendered users/show.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2/my_messages" for 127.0.0.1 at 2013-09-01 17:20:42 +0300
+Processing by UsersController#my_messages as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (5.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."user_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0  [["user_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  Rendered messages/_read_message.html.erb (4.8ms)
+  Rendered messages/_delete_message.html.erb (1.5ms)
+  Rendered messages/_message.html.erb (17.5ms)
+  Rendered users/show_my_messages.html.erb within layouts/application (65.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 76.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/2/my_messages" for 127.0.0.1 at 2013-09-01 17:21:18 +0300
+Processing by UsersController#my_messages as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (3.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ?  [["user_id", 2]]
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."user_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1[0m
+  Rendered messages/_read_message.html.erb (1.8ms)
+  Rendered messages/_delete_message.html.erb (0.2ms)
+  Rendered messages/_message.html.erb (3.9ms)
+  Rendered users/show_my_messages.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/2/myRides" for 127.0.0.1 at 2013-09-01 17:21:29 +0300
+Processing by UsersController#myRides as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (47.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mRide Load (0.1ms)[0m  SELECT "rides".* FROM "rides" WHERE "rides"."user_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0  [["user_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  Rendered rides/_ride.html.erb (215.3ms)
+  Rendered users/show_my_rides.html.erb within layouts/application (267.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 281ms (Views: 278.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-09-01 17:21:31 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (6.4ms)
+  Rendered users/show.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/2/myRides" for 127.0.0.1 at 2013-09-01 17:21:33 +0300
+Processing by UsersController#myRides as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (4.4ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mRide Load (0.1ms)[0m  SELECT "rides".* FROM "rides" WHERE "rides"."user_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0  [["user_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  Rendered rides/_ride.html.erb (225.2ms)
+  Rendered users/show_my_rides.html.erb within layouts/application (236.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 251ms (Views: 246.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/2/my_messages" for 127.0.0.1 at 2013-09-01 17:22:09 +0300
+Processing by UsersController#my_messages as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "rides" WHERE "rides"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "hitchhikes" ON "users"."id" = "hitchhikes"."user_id" WHERE "hitchhikes"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'[0m  [["user_id", 2]]
+  Rendered shared/_stats.html.erb (5.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ?  [["user_id", 2]]
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."user_id" = ? ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1[0m
+  Rendered messages/_read_message.html.erb (4.7ms)
+  Rendered messages/_delete_message.html.erb (0.5ms)
+  Rendered messages/_message.html.erb (8.8ms)
+  Rendered users/show_my_messages.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 46ms (Views: 41.9ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/messages/1" for 127.0.0.1 at 2013-09-01 17:22:11 +0300
+Processing by MessagesController#update as JS
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '0wmgsiIWYHIpOgQW3PumIA' LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" = ? ORDER BY created_at DESC LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "messages" SET "seen" = ?, "updated_at" = ? WHERE "messages"."id" = 1[0m  [["seen", true], ["updated_at", Sun, 01 Sep 2013 14:22:11 UTC +00:00]]
+  [1m[35m (61.4ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered messages/_read_message.html.erb (1.8ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "messages" WHERE "messages"."user_id" = ? AND "messages"."seen" = 'f'  [["user_id", 2]]
+  Rendered messages/update.js.erb (4.9ms)
+Completed 200 OK in 91ms (Views: 23.8ms | ActiveRecord: 62.4ms)
