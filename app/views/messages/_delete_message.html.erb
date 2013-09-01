@@ -1,0 +1,6 @@
+<span id="delete_message<%= message.id %>">
+	<% if current_user?(message.user) %>
+		| <%= link_to "delete", message, method: :delete, 
+					data: { confirm: "You sure?" }, title: message.content %>
+	<% end %>
+</span>

@@ -1,0 +1,24 @@
+<%= render 'shared/error_messages', object: f.object %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :age %>
+<%= f.number_field :age %>
+
+<%= f.radio_button :gender, "Male" %>
+<%= f.label :gender, "Male", :value => "Male" %>
+<%= f.radio_button :gender, "Female" %>
+<%= f.label :gender, "Female", :value => "Female" %>
+
+<%= f.label :vehicle_type %>
+<%= f.select :vehicle_type, options_for_select([ "Car", "Motorcycle" ], "Car") %>
+
+<%= f.label :email %>
+<%= f.text_field :email %>
+
+<%= f.label :password %>
+<%= f.password_field :password %>
+
+<%= f.label :password_confirmation, "Confirm Password" %>
+<%= f.password_field :password_confirmation %>

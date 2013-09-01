@@ -1,0 +1,2 @@
+$("#read_message<%= @message.id %>").html("<%= escape_javascript(render('messages/read_message', :locals => {:message => @message})) %>")
+$("#messages").html('<%= @message.user.messages.where(:seen => false).count %>')

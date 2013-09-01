@@ -1,0 +1,6 @@
+<% ride ||= @ride %>
+<%= form_for(ride.hitchhikes.find_by(user_id: @user),
+             html: { method: :delete },
+             remote: true) do |f| %>
+  <%= f.submit "unjoin", class: "link" %>
+<% end %>

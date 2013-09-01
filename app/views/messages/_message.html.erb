@@ -1,0 +1,8 @@
+<li>
+  <span class="content"><%= wrap(message.content) %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(message.created_at) %> ago.
+  </span> 
+  <%= render 'messages/read_message', message: message %> 
+  <%= render 'messages/delete_message', message: message %>
+</li>

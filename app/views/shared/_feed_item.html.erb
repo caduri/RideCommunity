@@ -1,0 +1,14 @@
+<li id="<%= feed_item.id %>">
+  <span class="user">
+    <%= link_to feed_item.user.name, feed_item.user %>
+  </span>
+  <span class="content"><%= wrap(feed_item.user_address) %> to <%= wrap(feed_item.addressto) %> at <%= wrap(feed_item.scheduledfor.strftime("%d/%m/%Y %H:%M")) %> (<%= feed_item.calculate_distance %> km) </span>
+  <span class="comment">
+  	<%= wrap(feed_item.comment) %>
+  </span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
+  </span>
+  <%= render 'rides/join_ride_form', ride: feed_item if signed_in? %>
+  
+</li>

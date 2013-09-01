@@ -1,0 +1,7 @@
+<% ride ||= @ride %>
+<%= form_for(ride.hitchhikes.build(user_id: current_user.id, ride_id: ride.id),
+             remote: true) do |f| %>
+  <div><%= f.hidden_field :user_id %></div>
+  <div><%= f.hidden_field :ride_id %></div>
+  <%= f.submit "join", class: "link" %>
+<% end %>

@@ -1,0 +1,2 @@
+$("#join_ride_form<%= @ride.id %>").html("<%= escape_javascript(render('rides/unjoin_ride', :locals => {:ride => @ride})) %>")
+$("#joinRides").html('<%= @user.hitchhikes.count %>')

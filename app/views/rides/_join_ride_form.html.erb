@@ -1,0 +1,13 @@
+<% unless current_user?(ride.user) %>
+	<div id="join_ride_form<%= ride.id %>"/>
+		<% unless ride.eligible_to_join? %>
+			ride is full
+		<% else %>
+			<% if ride.join_ride?(@user) %>
+				<%= render 'rides/unjoin_ride', ride: ride %>
+			<% else %>
+				<%= render 'rides/join_ride', ride: ride %>
+			<% end %>
+		<% end %>
+	</div>
+<% end %>

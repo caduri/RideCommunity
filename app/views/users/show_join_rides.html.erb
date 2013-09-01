@@ -1,0 +1,23 @@
+<% provide(:title, @title) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <%= gravatar_for @user %>
+      <h1><%= @user.name %></h1>
+      <span><%= link_to "view my profile", @user %></span>
+      <span><b>Join Rides:</b> <%= @user.hitchhikes.count %></span>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+  </aside>
+  <div class="span8">
+    <h3><%= @title %></h3>
+    <% if @rides.any? %>
+      <ul class="rides">
+        <%= render @rides %>
+      </ul>
+      <%= will_paginate @rides %>
+    <% end %>
+  </div>
+</div>

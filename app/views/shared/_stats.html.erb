@@ -1,0 +1,21 @@
+<% @user ||= current_user %>
+<div class="stats">
+  <a href="<%= myRides_user_path(@user) %>">
+    <strong id="ownRides" class="stat">
+      <%= @user.rides.count %>
+    </strong>
+    Own Rides
+  </a>
+  <a href="<%= join_rides_user_path(@user) %>">
+    <strong id="joinRides" class="stat">
+      <%= @user.hitchhikes.count %>
+    </strong>
+    Join Rides
+  </a>
+  <a href="<%= my_messages_user_path(@user) %>">
+    <strong id="messages" class="stat">
+      <%= @user.messages.where(:seen => false).count %>
+    </strong>
+    New Messages
+  </a>
+</div>
